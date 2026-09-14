@@ -106,35 +106,37 @@
     </pattern>
   </defs>
 
-  <!-- Main Background Panel -->
-  <rect x="1" y="1" width="848" height="218" rx="10" class="bg" />
-  <rect x="1" y="1" width="848" height="218" rx="10" fill="url(#dotGrid)" />
+  <a href="https://anuraggupta07122006.github.io/portfolio/" target="_blank" style="cursor: pointer; text-decoration: none;">
+    <!-- Main Background Panel -->
+    <rect x="1" y="1" width="848" height="218" rx="10" class="bg" />
+    <rect x="1" y="1" width="848" height="218" rx="10" fill="url(#dotGrid)" />
 
-  <!-- Ambient Pulsing Glow Orbs -->
-  <circle cx="730" cy="55" r="140" fill="#7C5CFF" style="animation: pulseGlow 5s ease-in-out infinite;" />
-  <circle cx="140" cy="160" r="110" fill="#00E5FF" style="animation: pulseGlow 6s ease-in-out infinite 1s;" />
+    <!-- Ambient Pulsing Glow Orbs -->
+    <circle cx="730" cy="55" r="140" fill="#7C5CFF" style="animation: pulseGlow 5s ease-in-out infinite;" />
+    <circle cx="140" cy="160" r="110" fill="#00E5FF" style="animation: pulseGlow 6s ease-in-out infinite 1s;" />
 
-  <!-- Tech HUD Corner Accents -->
-  <path d="M 12 24 L 12 12 L 24 12" class="corner-bracket" />
-  <path d="M 838 24 L 838 12 L 826 12" class="corner-bracket" />
-  <path d="M 12 196 L 12 208 L 24 208" class="corner-bracket" />
-  <path d="M 838 196 L 838 208 L 826 208" class="corner-bracket" />
+    <!-- Tech HUD Corner Accents -->
+    <path d="M 12 24 L 12 12 L 24 12" class="corner-bracket" />
+    <path d="M 838 24 L 838 12 L 826 12" class="corner-bracket" />
+    <path d="M 12 196 L 12 208 L 24 208" class="corner-bracket" />
+    <path d="M 838 196 L 838 208 L 826 208" class="corner-bracket" />
 
-  <!-- Status Pill (Top Right) -->
-  <g transform="translate(565, 34)">
-    <rect x="0" y="0" width="240" height="26" rx="13" class="status-pill" />
-    <circle cx="14" cy="13" r="4" class="status-dot" />
-    <text x="26" y="17" class="status-text">AVAILABLE FOR SDE / AI</text>
-  </g>
+    <!-- Status Pill (Top Right) -->
+    <g transform="translate(565, 34)">
+      <rect x="0" y="0" width="240" height="26" rx="13" class="status-pill" />
+      <circle cx="14" cy="13" r="4" class="status-dot" />
+      <text x="26" y="17" class="status-text">EXPLORE LIVE PORTFOLIO ↗</text>
+    </g>
 
-  <!-- Typography Content -->
-  <text x="44" y="52" class="subtitle">ENGINEERING DOSSIER &amp; RESEARCH BRIEF</text>
-  <text x="44" y="104" class="title">Anurag Gupta <tspan class="title-bold">— AI/ML &amp; Systems</tspan></text>
-  <text x="44" y="146" class="tagline">B.Tech AIML @ PSIT Kanpur • RAG Architect, Vision Systems &amp; Cloud</text>
+    <!-- Typography Content -->
+    <text x="44" y="52" class="subtitle">ENGINEERING DOSSIER &amp; RESEARCH BRIEF</text>
+    <text x="44" y="104" class="title">Anurag Gupta <tspan class="title-bold">— AI/ML &amp; Systems</tspan></text>
+    <text x="44" y="146" class="tagline">B.Tech AIML @ PSIT Kanpur • RAG Architect, Vision Systems &amp; Cloud</text>
 
-  <!-- Interactive Terminal Cursor -->
-  <rect x="525" y="134" width="7" height="15" class="cursor" />
+    <!-- Interactive Terminal Cursor -->
+    <rect x="525" y="134" width="7" height="15" class="cursor" />
 
-  <!-- Animated Bottom Divider Accent -->
-  <line x1="44" y1="184" x2="806" y2="184" class="glow-line" />
+    <!-- Animated Bottom Divider Accent -->
+    <line x1="44" y1="184" x2="806" y2="184" class="glow-line" />
+  </a>
 </svg>
