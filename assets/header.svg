@@ -1,0 +1,140 @@
+<svg fill="none" viewBox="0 0 850 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.12; transform: scale(1); }
+      50% { opacity: 0.28; transform: scale(1.08); }
+    }
+    @keyframes drawLine {
+      from { stroke-dashoffset: 850; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes badgePulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .bg { fill: #090B10; stroke: url(#border-gradient); stroke-width: 1.2; }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #00E5FF;
+      letter-spacing: 3px;
+    }
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 32px;
+      font-weight: 300;
+      fill: #F8FAFC;
+      letter-spacing: -0.5px;
+    }
+    .title-bold {
+      font-weight: 800;
+      fill: url(#cyan-purple-grad);
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      fill: #94A3B8;
+      letter-spacing: 0.2px;
+    }
+    .cursor {
+      fill: #00E5FF;
+      animation: blink 1.1s infinite;
+    }
+    .status-pill {
+      fill: rgba(124, 92, 255, 0.12);
+      stroke: rgba(124, 92, 255, 0.35);
+      stroke-width: 1;
+    }
+    .status-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      fill: #A78BFA;
+      letter-spacing: 1px;
+    }
+    .status-dot {
+      fill: #10B981;
+      animation: badgePulse 2s ease-in-out infinite;
+    }
+    .glow-line {
+      stroke: url(#neon-line-grad);
+      stroke-width: 1.5;
+      stroke-dasharray: 850;
+      stroke-dashoffset: 850;
+      animation: drawLine 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .corner-bracket {
+      stroke: #7C5CFF;
+      stroke-width: 1.5;
+      fill: none;
+      opacity: 0.65;
+    }
+  </style>
+
+  <defs>
+    <!-- Border Gradient -->
+    <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="cyan-purple-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#9D72FF"/>
+    </linearGradient>
+
+    <!-- Laser Line Gradient -->
+    <linearGradient id="neon-line-grad" x1="44" y1="0" x2="806" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.05"/>
+      <stop offset="30%" stop-color="#7C5CFF" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Dot Matrix Grid -->
+    <pattern id="dotGrid" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00E5FF" fill-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <!-- Main Background Panel -->
+  <rect x="1" y="1" width="848" height="218" rx="10" class="bg" />
+  <rect x="1" y="1" width="848" height="218" rx="10" fill="url(#dotGrid)" />
+
+  <!-- Ambient Pulsing Glow Orbs -->
+  <circle cx="730" cy="55" r="140" fill="#7C5CFF" style="animation: pulseGlow 5s ease-in-out infinite;" />
+  <circle cx="140" cy="160" r="110" fill="#00E5FF" style="animation: pulseGlow 6s ease-in-out infinite 1s;" />
+
+  <!-- Tech HUD Corner Accents -->
+  <path d="M 12 24 L 12 12 L 24 12" class="corner-bracket" />
+  <path d="M 838 24 L 838 12 L 826 12" class="corner-bracket" />
+  <path d="M 12 196 L 12 208 L 24 208" class="corner-bracket" />
+  <path d="M 838 196 L 838 208 L 826 208" class="corner-bracket" />
+
+  <!-- Status Pill (Top Right) -->
+  <g transform="translate(565, 34)">
+    <rect x="0" y="0" width="240" height="26" rx="13" class="status-pill" />
+    <circle cx="14" cy="13" r="4" class="status-dot" />
+    <text x="26" y="17" class="status-text">AVAILABLE FOR SDE / AI</text>
+  </g>
+
+  <!-- Typography Content -->
+  <text x="44" y="52" class="subtitle">ENGINEERING DOSSIER &amp; RESEARCH BRIEF</text>
+  <text x="44" y="104" class="title">Anurag Gupta <tspan class="title-bold">— AI/ML &amp; Systems</tspan></text>
+  <text x="44" y="146" class="tagline">B.Tech AIML @ PSIT Kanpur • RAG Architect, Vision Systems &amp; Cloud</text>
+
+  <!-- Interactive Terminal Cursor -->
+  <rect x="525" y="134" width="7" height="15" class="cursor" />
+
+  <!-- Animated Bottom Divider Accent -->
+  <line x1="44" y1="184" x2="806" y2="184" class="glow-line" />
+</svg>
